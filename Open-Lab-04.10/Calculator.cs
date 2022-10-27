@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_04._10
 {
@@ -6,7 +6,15 @@ namespace Open_Lab_04._10
     {
         public float Average(int[] nums)
         {
-            throw new NotImplementedException();
+            float lenght = nums.Length;
+            float x = 0;
+            for (int i = 0;i < nums.Length; i++)
+            {
+                x = x + nums[i];
+            }
+            float average = x / lenght;
+            return average;
+
         }
     }
 }
